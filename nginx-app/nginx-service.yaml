@@ -5,8 +5,12 @@ metadata:
   labels:
     run: nginx-app-service
 spec:
-  ports:
-  - port: 80
-    protocol: TCP
+  type: NodePort
   selector:
     run: nginx-app
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    nodePort: 30007
+
