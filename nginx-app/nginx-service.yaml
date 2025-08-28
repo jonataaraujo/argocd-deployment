@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: nginx-app-service
   labels:
-    run: nginx-app-service
+    app: nginx-app
 spec:
   type: NodePort
   selector:
-    run: nginx-app
+    app: nginx-app
   ports:
   - port: 80
     targetPort: 80
