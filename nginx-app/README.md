@@ -1,1 +1,1 @@
-# argocd-deployments
+# nginx
